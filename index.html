@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<title> The Practice of HTML Element </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		h2{
+			 border-style: solid;
+			 border-color: green;
+			 font-size: 20px;
+
+		}
+		
+</style>
+</head>
+<body>
+	<h1 style="color:white; background-color:teal ">The Practice of HTML Element</h1>
+
+	<h2>The wbr element</h2>
+	<p>Try to shrink the browser window, to view how the very long word in the paragraph below will break:</p>
+
+	<p>Sheikh Rehana, daughterofFatheroftheNationBangabandhu<wbr>SheikhMujiburRahmanandyoungersisterofPrimeMinister<wbr>SheikhHasina,receivedthefirstdoseofCovid-19vaccineonFebruary24.</p>
+
+	<p><b>Note:</b> The wbr element is not supported in Internet Explorer 11 (or earlier).</p>
+
+	<h3>The video element</h3>
+	<video width="800" height="600" controls>
+		<source src="video/Lionel Messi.mp4" type="video/mp4">
+	</video>
+
+	<h2>The var element</h2>
+	<p>The area of a square is A = <var> s </var>  x <var> s </var>,where <var> s </var>  is the length of each side of the square. </p>
+
+	
+	<h3>The u element</h3>
+	<p>Bangladesh and India are <u>loking</u> forward to <u> strongar </u> connectivity between the two countries and with South Asia and beyond in the next 20 years.</p>
+
+	<h4>The time element</h4>
+	<p> My clinic open at <time>10.00AM</time> and close at 10.00 pm.</p>
+	<p><b>Note:</b> The time element does not render as anything special in any of the major browsers.</p>
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<style>
+			table,th,td {
+				border: 1px solid aqua
+
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1>The thead, tbody, and tfoot elements</h1>
+		<table>
+		<thead>
+			<tr>
+				<th>Month</th>
+				<th>Income</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>January</td>
+				<td>20,000 TK</td>
+			</tr>
+			<tr>
+			    <td>February</td>
+			    <td>15,000 Tk</td>
+			</tr>
+			<tr>
+				<td>March</td>
+				<td>25,000Tk</td>
+			</tr>
+			<tr>
+				<td>April</td>
+				<td>30,000 Tk</td>
+			</tr>
+			</tbody>
+			<tfoot>
+				<td>Sum</td>
+				<td>90000 Tk</td>
+			</tfoot>
+			</table>
+	
+	
+<h1>Submitted Form Data</h1>
+<form action="/action_page.php">
+<label for="shikbe sobaireview" >Review of shikbe sobai:</label>
+
+<textarea id="shikbe sobai review" name="shikbe sobai review" rows="4" cols="50">
+	 At shikbe sobai you will learn how to make a website. They will give you tutorials in all web development technologies.
+	</textarea>
+	<br><br>
+	<input type="Submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+<h1>The template Element</h1>
+	<p>Click the button below to display the hidden content from the template element.</p>
+	<button onclick="showContent()" >Show hidden content</button>
+	<template>
+		<h2>Elephant</h2>
+		<img src="image/elephant.jpg" alt="elephant">
+	</template>
+
+	<script >
+		function showContent()   {
+			var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+			
+		}
+		
+	</script>
+
+	<h1 class="head1">The svg element</h1>
+	<svg width ="200" hight="150">
+		<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="red" />
+  Sorry, your browser does not support inline SVG.
+	</svg>
+    
+    <h2>The sub and sup elements</h2>
+	<p>Six people have died from <sub>Covid-19</sub>  in 24 hours (till 8am today), according to a press release issued by the Directorate General of Health Services <sub>(DGHS)</sub> .</p>
+
+    <h3>The summary element</h3>
+	<details>
+		<summary>Buckingham Palace</summary>
+		<p>Buckingham Palace  is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
+	</details>
+
+
+
+
+
+<h1>Buckingham Palace</h1>
+<p>Buckingham Palace  is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning.</p>
+
+<h1>The strong element</h1>
+<p>Buckingham Palace  is the London residence and administrative  headquarters of the monarch of the United Kingdom.</p>
+<p> <strong>Buckingham Palace  is the London residence and administrative  headquarters of the monarch of the United Kingdom.</strong> </p>
+
+<h1 class="head1 blue">The span element</h1>
+<p>Buckingham Palace  is the London residence and administrative <span style="color:red;front-weight:bold" >headquarters</span>  of the monarch of the <span style="color:green;front-weight:bold">United Kingdom</span> .</p>
+
+<h1>The small element</h1>
+<p>Buckingham Palace  is the London residence and administrative  headquarters of the monarch of the United Kingdom.</p>
+<p><small>Buckingham Palace  is the London residence and administrative  headquarters of the monarch of the United Kingdom.</small> </p>
+
+<h1>The select element</h1>
+<form action="/action_page.php">
+  <label for="mobiles">Choose a mobile:</label>
+  <select name="mobile" id="mobile">
+    <option value="Nokia">Nokia</option>
+    <option value="Samsung">Samsung</option>
+    <option value="oppo">Oppo</option>
+    <option value="Apple">Apple</option>
+    <option value="Motorola">Motorola</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+
+<h1 class="blue" >The section element</h1>
+<section>
+	<h2>FIFA History</h2>
+	<p>FIFA was founded in 1904 to oversee international competition among the national associations of Belgium, Denmark, France, Germany, the Netherlands, Spain, Sweden, and Switzerland. Headquartered in Zürich, its membership now comprises 211 national associations.</p>
+</section>
+<section>
+	<h2>FIFA Flag</h2>
+	<p>The FIFA flag has a blue background, with the organization's logo in the middle.The current FIFA flag was first flown during the 2018 FIFA World Cup opening ceremony in Moscow, Russia and has been used ever since</p>
+</section>
+<h1 class="head1">The samp element</h1>
+
+<p>Message from my computer:</p>
+
+<p><samp>File not found.<br>File was corrupted</samp></p>
+
+<h1>The s element</h1>
+
+<p><s>Refer a Friend Get 20% Off !</s></p>
+<p>SOLD OUT!</p>
+<h1>The q element</h1>
+<p>FIFA’s new vision is to:
+ <q> promote the game of football, protect its integrity and bring the game to all.</q>
+</p>
+<h1>The progress element</h1>
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 60% </progress>
+
+<h1>The pre element</h1>
+<pre>Buckingham Palace  is the London residence and administrative headquarters of the monarch of the United Kingdom. Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality. It has been a focal point for the British people at times of national rejoicing and mourning</pre>
+
+<h1 class="head1">The picture element</h1>
+<p>Resize the browser window to load different images.</p>
+<picture>
+<img src="image/coffee cup.jpg" alt="coffee cup.">
+</picture>
+<h1>The param element</h1>
+
+<object data="Cat.wav">
+<param name="autoplay" value="true">
+</object>
+<h1>The output element</h1>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="25">
+=<output name="x" for="a b"></output>
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
+<h1 class="head1">The optgroup element</h1>
+<p>The optgroup tag is used to group related options in a drop-down list:</p>
+<form action="/action_page.php">
+  <label for="mobiles">Choose a car:</label>
+  <select name="mobiles" id="mobiles">
+    <optgroup label="China">
+      <option value="Oppo">Oppo</option>
+      <option value="Huawei">Huawei</option>
+      <option value="Vivo">Vivo </option>
+    </optgroup>
+    <optgroup label="United States">
+      <option value="Apple">Apple</option>
+      <option value="Motorola">Motorola</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1 id="heading1">The noscript element</h1>
+
+<p>A browser with JavaScript disabled will show the text inside the noscript element ("Hello World!" will not be displayed).</p>
+
+<script>
+document.write("Hello World!")
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<h1>The nav element</h1>
+<p>The nav element defines a set of navigation links:</p>
+<nav>
+<a href="https://www.facebook.com/KhalilurRahman.md">Facebook</a> |
+<a href="https://twitter.com/Khalilur0Rahman">twitter</a> |
+<a href="https://www.linkedin.com/in/khalilur-rahman01/">Linkedin</a> |
+
+</nav>
+<h1 class="head1">The meter element</h1>
+
+<p>The meter element is used to display a gauge:</p>
+
+<label for="disk_e">Disk usage C:</label>
+<meter id="disk_e" value="4" min="0" max="10">4 out of 10</meter><br>
+
+<label for="disk_f">Disk usage D:</label>
+<meter id="disk_f" value="0.8">80%</meter>
+
+<p><strong>Note:</strong> The meter tag is not supported in Edge 12 (or earlier).</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<p>All meta information goes in the head section...</p>
+
+<h1>The mark element</h1>
+
+<p>Do not miss <mark>class</mark> with any reason.</p>
+
+<h1>The Different Dosage Forms of Drugs</h1>
+<p>A tablet is a hard, compressed medication in round, oval or squareshape.  Solid  dosage  form  containing  unit  dose  of  one  or  moremedicament.</p>
+<hr>
+<p>Oral solutions are clear Liquid preparations for oral use containing one or moreactive ingredients dissolved in a suitable vehicle</p>
+<hr>
+<p>Liniments are fluid, semi-fluid or, occasionally, semi-solid preparations intended for application to the skin.</p>
+
+<article>
+	<header>
+		<h1>Hello!</h1>
+		<p>Posted by Khalilur Rahman</p>
+    <p>I am a Full stack web developer</p>
+	</header>
+</article>
+
+<h1>The footer element</h1>
+<footer>
+  <p>Author: Khalilur Rahman<br>
+  <a href="mailto:kazikhalilurrahman01@gmail.com">kazikhalilurrahman01@gmail.com</a></p>
+</footer>
+<h1> The figure and figcaption element</h1>
+<figure>
+  <img src="image/roman colosseum,italy.jpg" alt="roman colosseum">
+  <figcaption>Fig.1 - roman colosseum, italy.</figcaption>
+</figure>
+
+<h1 class="head1">The fieldset element</h1>
+
+<form action="/action_page.php" >
+<fieldset>
+ <legend>Form:</legend>
+ <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <input type="submit" value="Submit">
+</fieldset>
+<h1>The em element</h1>
+
+<p>You <em>have</em> to do thi work</p>
+
+<p>We <em>cannot</em> do this.</p>
+
+<h1 class="head2">The dl, dd, and dt elements</h1>
+
+<p>These three elements are used to create a description list:</p>
+
+<dl>
+  <dt>Tea</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+
+
+	
+</form>
+</body>
+</html>
+
