@@ -1,2 +1,2 @@
-# css-practise
+ css-practise
 css repository
